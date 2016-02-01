@@ -9,12 +9,12 @@ app.set('views', './views');
 
 
 //Routes
-app.get('/', (req, res) => {
+app.get('/', function(req, res) {
   res.render('index');
 });
 app.use('/api', require('./routes/api'));
 
 //Start server
-app.listen(port, () => {
+app.listen(port, function() {
   console.log('App running on port: ' + port);
 });

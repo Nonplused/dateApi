@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/Nonplused/dateApi/issues"
   },
+  "engines": {
+    "node": "4.1.1"
+  },
   "homepage": "https://github.com/Nonplused/dateApi#readme",
   "dependencies": {
     "express": "4.13.4",

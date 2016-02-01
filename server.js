@@ -3,6 +3,7 @@ var express = require('express');
 
 //Express
 var app = express();
+app.set('view engine', 'jade');
   
 //Routes
 app.use('/api', require('./routes/api'));

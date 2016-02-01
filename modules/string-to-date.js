@@ -1,7 +1,6 @@
 var moment = require('moment');
 
 module.exports = function (dateStr) {
-  dateStr = decodeURI(dateStr.slice(1,dateStr.length))
   if (!isNaN(dateStr)) {
     dateStr = +dateStr*1000;
   }

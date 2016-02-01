@@ -3,9 +3,10 @@ var express = require('express');
 var router = express.Router();
 var stringToDate = require('../modules/string-to-date');
 
-router.get('/*', (req, res) => {
+router.get('/:date', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
-  res.send(JSON.stringify(stringToDate(req.url)));
+  
+  res.send(JSON.stringify(stringToDate(req.params.date)));
 });
 
 //Return router

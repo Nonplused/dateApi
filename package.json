@@ -1,21 +1,21 @@
 {
   "name": "date-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "responds to natural dates or unix timestamps with both",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nonplused/node-project.git"
+    "url": "git+https://github.com/Nonplused/dateApi.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Nonplused/node-project/issues"
+    "url": "https://github.com/Nonplused/dateApi/issues"
   },
-  "homepage": "https://github.com/Nonplused/node-project#readme",
+  "homepage": "https://github.com/Nonplused/dateApi#readme",
   "dependencies": {
   }
 }

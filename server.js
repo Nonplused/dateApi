@@ -5,7 +5,8 @@ var express = require('express');
 var app = express();
 app.set('views', './views');
 app.set('view engine', 'jade');
-  
+app.set('port', (process.env.PORT || 5000));
+
 //Routes
 app.get('/', (req, res) => {
   res.render('index');
@@ -13,5 +14,6 @@ app.get('/', (req, res) => {
 app.use('/api', require('./routes/api'));
 
 //Start server
-app.listen(5000);
-console.log('API on port: 5000');
+app.listen(app.get('port', () => {
+  console.log('API on port: ', app.get('port')); 
+}));
